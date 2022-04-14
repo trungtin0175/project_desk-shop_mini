@@ -1,0 +1,106 @@
+:root{
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #333;
+    --primary-color: #e34444;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Overlay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes FadeOn{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes Fade{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes horizontal{
+    0% {
+        transform: translateX(0);
+    }
+    7% {
+        transform: translateX(4px);
+    }
+    14% {
+        transform: translateX(0px);
+    }
+    21% {
+        transform: translateX(4px);
+    }
+    28% {
+        transform: translateX(0px);
+    }
+    35% {
+        transform: translateX(4px);
+    }
+    42%,
+    100% {
+        transform: translateX(0px);
+    }
+    /* from{
+        transform: translateX(30%);
+    }
+    to{
+        transform: translateX(0%);
+    } */
+}
+/* MŨI TÊN */
+.down{
+    cursor: pointer;
+    border: solid rgba(0,0,0,0.1);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 13px;
+    position: absolute;
+    z-index: 1;
+}
+.arrow-white{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 18px;
+    border-color: transparent transparent var(--white-color) transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: var(--primary-color) ;
+    border: none ;
+}
+
+
